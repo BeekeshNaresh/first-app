@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+   .main{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+   }
+   .box{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    
+    animation-name: beekesh;
+    animation-iteration-count: 1;
+    animation-duration: 12s;
+    animation-delay: 2s;
+    background-color: green;
+   }
+   @keyframes beekesh{
+    0%{
+       justify-self: start;
+       align-self: self-start;
+    }
+   
+    20%{
+        scale: 3;
+        justify-self: end;
+       align-self: self-start;
+       border-radius: 20px;
+       rotate: 90deg;
+    }
+    40%{
+        scale: 1;
+        top: 90%;
+       left: 90%; 
+       border-radius: 0px;
+       rotate: -90deg;
+    }
+    60%{
+        scale: 3;
+        top: 10%;
+       left: 90%; 
+       border-radius: 0px;
+       rotate: 90deg;
+    }
+    80%{
+        scale: 1;
+        top: 55%;
+       left: 55%; 
+       border-radius: 0px;
+       rotate: 90deg;
+    }
+    100%{
+        scale: 20;
+       
+    }
+   
+   }
+</style>
+<body>
+    <div class="main">
+        
+        
+        
+        <div class="box">
+            
+        </div>
+        
+    </div>
+    
+</body>
+</html>
